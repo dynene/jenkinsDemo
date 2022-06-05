@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo "202206071140"
+                echo 'Hello, Hongik!'
             }
         }
     }
