@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "demoAgent"
+    }
 
     stages {
         stage('Build') {
@@ -9,7 +11,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                build 'SeleniumMaven'
+                echo 'Hello Hongik'
+                // build 'SeleniumMaven'
             }
         }
         stage('Deploy') {
